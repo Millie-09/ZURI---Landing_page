@@ -1,0 +1,162 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/bg-intro-desktop.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+main {
+    overflow: auto;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+main .container {
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    padding: 70px;
+    margin-top: 20px;
+    padding-top: 70px;
+}
+
+.container .part1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    padding: 20px;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.container .part2 {
+    flex: 1;
+}
+
+main .container .part2 .form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.137);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.part1 p {
+    padding-top: 20px;
+}
+
+input {
+    width: 85%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px rgba(0, 0, 0, 0.116) solid;
+}
+
+.part2 #topbtn {
+    background-color: hsl(248, 32%, 49%);
+    flex: 1;
+    border-radius: 7px;
+    border: 0px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 1px 2.1px rgba(0, 0, 0, 0.158);
+    color: rgba(255, 255, 255, 0.589);
+}
+
+#topbtn strong {
+    color: white;
+}
+
+.form {
+    padding-top: 25px;
+    -webkit-appearance: none;
+}
+
+.form #btmbtn {
+    width: 87%;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    padding-top: 10px;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.075)
+}
+
+#diff {
+    color: hsl(0, 90%, 67%);
+}
+
+.part2 h6 {
+    font-weight: 100;
+    font-size: 0.8em;
+    padding: auto;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+@media only screen and (max-width: 395px) {
+    body { 
+        background-image: url('images/bg-intro-mobile.png');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+}
+    #topbtn {
+        padding: 15px;
+    }
+    h6 {
+        font-size: 0.5em;
+    }
+    main .container {
+        width: 90%;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+    main .container .part1 {
+        padding: 1.3em;
+    }
+    .part1 h1 {
+        line-height: 1.3em;
+        text-align: center;
+    }
+    main .part1 p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5em;
+        padding-bottom: 1.7em;
+    }
+    .container .part2 {
+        align-items: center;
+        justify-content: center;
+    }
+    main .container .part2 form {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}   main .container .part2 form #btmbtn {
+        padding:10px;
+        border-radius: 0px;
+}
